@@ -138,19 +138,24 @@
         }, {
             matchMedia: "(min-width: 991.98px)",
             columns: 3
-        }], "rc-mb-0"), e("#contact .contact-section .contact-form").on("submit", (function (a) {
-            var t = e(this), i = t.find("#contact-submit"), s = i.text(), o = t.find(".contact-feedback");
-            a.preventDefault(), i.html("Wait...").addClass("wait").prop("disabled", !0), setTimeout((function () {
-                e.ajax({url: t.attr("action"), type: "POST", data: t.serialize()}).done((function (e) {
-                    "success" == e ? (i.removeClass("wait").html("Success").addClass("success"), o.addClass("success").html("Thank you for your message. It has been sent.").fadeIn(200), setTimeout((function () {
-                        i.html(s).removeClass("success").prop("disabled", !1), o.fadeOut(200).removeClass("success").html("")
-                    }), 6e3), t[0].reset()) : (console.log(e), i.removeClass("wait").html("Error").addClass("error"), o.addClass("error").html("Server error! Please check your browser console log for more details.").fadeIn(200), setTimeout((function () {
-                        i.html(s).removeClass("error").prop("disabled", !1), o.fadeOut(200).removeClass("error").html("")
-                    }), 6e3))
-                }))
-            }), 1e3)
-        }))
+        }],)
+
     })), e(window).on("load", (function () {
         e(".preloader-icon").fadeOut(400), e(".preloader").delay(500).fadeOut("slow")
     }))
 }(jQuery);
+
+document.oncontextmenu = new Function("return false");
+
+
+function ffalse() {
+    return false;
+}
+function ftrue() {
+    return true;
+}
+document.onselectstart = new Function("return false");
+if (window.sidebar) {
+    document.onmousedown = ffalse;
+    document.onclick = ftrue;
+}

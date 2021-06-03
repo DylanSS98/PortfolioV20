@@ -26,6 +26,32 @@ li p{
     text-align: center;
 
 }
+.contact_espace{
+   margin-left: 20px;
+
+}
+.contact_espace ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.role{
+    text-align: center;
+    margin-top: 10px;
+    border: 2px #9F9F9F solid;
+    border-top: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1000px) {
+    .card_comp ul {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        color: aliceblue;
+    }
+}
 
 :focus {
     outline: 0
@@ -739,7 +765,7 @@ hr {
 
 .navbar .navbar-nav .nav-link {
     color: #e6e6e6;
-    font-size: 15px;
+    font-size: 17px;
     padding: 0
 }
 
