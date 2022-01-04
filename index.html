@@ -28,6 +28,8 @@
 
     <link rel="stylesheet" href="../customizer/main.css">
 
+
+
 </head>
 
 <body class="theme-dark">
@@ -134,7 +136,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-md-6 single-info"><span>Age:</span>
-                                                <p>22</p>
+                                                <p>23</p>
                                             </div>
                                             <div class="col-12 col-md-6 single-info"><span>De:</span>
                                                 <p>Vesoul, 70000</p>
@@ -662,7 +664,7 @@
                             </div>
                             <!-- Single item-->
                             <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item"
-                                                                              href="http://www.ostra-pro.fr"
+                                                                              href="https://www.ostra-pro.fr"
                                                                               data-lightbox>
                                 <div class="portfolio-wrapper"><img class="img-fluid" alt="Item"
                                                                     src="img/ostra.png">
@@ -904,8 +906,10 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <input type="submit" class="btn button-main button-scheme">
+                                        <input type="hidden" id="recaptchaResponse" name="recaptcha">
+                                        <input type="submit" class="btn button-main button-scheme g-recaptcha" data-sitekey="6Lff2uwdAAAAAM7gP4ZFnbSRcs9Cc_8yJrpz-qYT"
+                                               data-callback='onSubmit'
+                                               data-action='submit'>
                                     </div>
                                 </form>
                             </div>
@@ -966,6 +970,9 @@
                         <!-- removeIf(customizerDist)-->
                         <script src="../customizer/main.js"></script>
                         <!-- endremoveIf(customizerDist)-->
+
+                        <!-- Recaptcha -->
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
 
 </body>
 

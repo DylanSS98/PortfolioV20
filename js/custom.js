@@ -7,3 +7,8 @@
  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
  */
 !function(n){"use strict";n((function(){})),n(window).on("load",(function(){}))}(jQuery);
+
+
+    function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+}
